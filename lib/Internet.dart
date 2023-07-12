@@ -14,7 +14,22 @@ class _State extends State<Internet> {
     return Scaffold(
       body: Center(
         child: Column(
-          
+          children: <Widget>[
+            TextButton(
+              onPressed: (){},
+              child: const Text('HTTPS')
+            ),
+
+            TextButton(
+              onPressed: (){},
+              child: const Text('HTTP')
+            ),
+
+            TextButton(
+              onPressed: (){},
+              child: const Text('Pinned')
+            ),
+          ],
         ),
       ),
     );
