@@ -1,0 +1,15 @@
+# ninja log v5
+1	262	710844314	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.c.o	52ea277a61928a26
+263	597	710844314	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/5n5p5fv4/obj/x86/libnative.so	617c44324dc2e19e
+0	98	710862710	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.cpp.o	803eff2ffe8aaa9e
+98	357	710862710	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/5n5p5fv4/obj/x86/libnative.so	2a377d5f06c9bf6f
+0	513	710862849	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.cpp.o	803eff2ffe8aaa9e
+514	627	710862849	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/5n5p5fv4/obj/x86/libnative.so	2a377d5f06c9bf6f
+3	655	710869367	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.cpp.o	803eff2ffe8aaa9e
+655	870	710869368	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/5n5p5fv4/obj/x86/libnative.so	2a377d5f06c9bf6f
+1	105	710870444	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.c.o	52ea277a61928a26
+106	226	710870444	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/5n5p5fv4/obj/x86/libnative.so	617c44324dc2e19e
+3	142	710889461	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.c.o	52ea277a61928a26
+143	351	710889461	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/5n5p5fv4/obj/x86/libnative.so	617c44324dc2e19e
+3	136	710891822	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.c.o	52ea277a61928a26
+136	243	710891822	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/5n5p5fv4/obj/x86/libnative.so	617c44324dc2e19e
