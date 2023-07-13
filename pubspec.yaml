@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   ffi: ^1.0.0
+  requests: ^4.7.0
+  shared_preferences: ^2.2.0
 
 dev_dependencies:
   flutter_test:
