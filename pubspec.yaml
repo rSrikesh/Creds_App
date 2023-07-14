@@ -12,11 +12,15 @@ dependencies:
   ffi: ^1.0.0
   requests: ^4.7.0
   shared_preferences: ^2.2.0
+  floor: ^1.4.2
+  sqflite: ^2.2.8+4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  floor_generator: ^1.4.2
+  build_runner: ^2.4.6
 
 flutter:
   uses-material-design: true
