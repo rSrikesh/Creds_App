@@ -1,3 +1,5 @@
 # ninja log v5
 1	343	711131051	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.c.o	581d9ce950a1373d
 346	594	711131051	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/2eo2j292/obj/armeabi-v7a/libnative.so	b5d3dc5a0bdd2b2a
+0	92	711150416	CMakeFiles/native.dir/C_/Users/DELL/Desktop/Code/creds_app/src/native.c.o	581d9ce950a1373d
+92	213	711150416	C:/Users/DELL/Desktop/Code/creds_app/build/app/intermediates/cxx/Debug/2eo2j292/obj/armeabi-v7a/libnative.so	b5d3dc5a0bdd2b2a

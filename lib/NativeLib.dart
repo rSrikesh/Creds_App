@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'ffi_bridge.dart';
 
+
 class NativeLib extends StatefulWidget {
   const NativeLib({super.key});
 
@@ -22,7 +23,7 @@ class _State extends State<NativeLib> {
       body: Center(
         child: Column(
           children: <Widget>[
-            const SizedBox(height: 120.0),
+            const SizedBox(height: 100.0),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: TextField(
@@ -32,7 +33,7 @@ class _State extends State<NativeLib> {
                     labelText: 'Enter First Value'),
               ),
             ),
-            const SizedBox(height: 15.0),
+            const SizedBox(height: 10.0),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: TextField(
@@ -42,7 +43,7 @@ class _State extends State<NativeLib> {
                     labelText: 'Enter Second Value'),
               ),
             ),
-            const SizedBox(height: 15.0),
+            const SizedBox(height: 10.0),
             Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: TextButton(
@@ -53,15 +54,14 @@ class _State extends State<NativeLib> {
                   },
                   child: const Text('Encrypt'),
                 )),
-            const SizedBox(height: 15.0),
 
             Visibility(
               visible: isButtonClicked,
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(15.0),
                 child: Text(
                   'Encrypted Value: ${ffi.getEncrypt(x.text, y.text)}',
-                  style: const TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 14),
                 ),
               ),
             ),
