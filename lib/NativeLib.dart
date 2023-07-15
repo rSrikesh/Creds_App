@@ -22,7 +22,7 @@ class _State extends State<NativeLib> {
       body: Center(
         child: Column(
           children: <Widget>[
-            const SizedBox(height: 150.0),
+            const SizedBox(height: 120.0),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: TextField(

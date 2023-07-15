@@ -18,6 +18,7 @@ class _State extends State<Sandbox> {
   late SharedPreferences prefs;
   late SandboxData_dao d;
   late SandboxData x;
+  bool isClicked = false;
 
   @override
   void initState() {
@@ -67,8 +68,18 @@ class _State extends State<Sandbox> {
                   await prefs.setString('value_stored', a.text);
                   x = SandboxData(id: null, value: b.text);
                   await d.insertData(x);
+                  setState(() {
+                    isClicked = true;
+                  });
                 },
                 child: const Text('Submit')),
+
+            const SizedBox(height:15.0),
+
+            Visibility(
+              visible: isClicked,
+              child: const Text('Values has been saved',style: TextStyle(fontSize: 20))
+            ),
           ],
         ),
       ),

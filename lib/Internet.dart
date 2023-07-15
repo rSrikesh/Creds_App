@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:requests/requests.dart';
+import 'package:http_certificate_pinning/http_certificate_pinning.dart';
 
 class Internet extends StatefulWidget {
   const Internet({super.key});
@@ -56,7 +57,21 @@ class _State extends State<Internet> {
                   });
                 },
                 child: const Text('HTTP')),
-            TextButton(onPressed: () {}, child: const Text('Pinned')),
+            TextButton(
+                onPressed: () async {
+                  try {
+                    List<String> hashes = [];
+                    hashes.add("94afe3ea66eddec428b635b6f68a39a33f8d6e3969d7a27150d4f656eab2f3b6");
+                    final secure = await HttpCertificatePinning.check(
+                        serverURL: 'https://8ksec.io/?val=${x.text}${y.text}',
+                        sha: SHA.SHA256,
+                        allowedSHAFingerprints: hashes,
+                        timeout: 50);
+                  } catch (e) {
+                    print("Not able to bypass Pinning");
+                  }
+                },
+                child: const Text('Pinned')),
             const SizedBox(height: 15.0),
             Visibility(
               visible: isClicked,
