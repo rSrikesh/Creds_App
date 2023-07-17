@@ -15,15 +15,15 @@ class FFIBridge {
         dylib.lookupFunction<EncryptFunction, EncryptFunctionDart>('encrypt');
   }
 
-  List<int> getEncrypt(String x, String y) {
+  String getEncrypt(String x, String y) {
     final Pointer<Utf8> xPtr = x.toNativeUtf8();
     final Pointer<Utf8> yPtr = y.toNativeUtf8();
     final Pointer<Utf8> result = _encrypt(xPtr, yPtr);
     final String returnValue = result.toDartString();
-    List<int> bytes = utf8.encode(returnValue);
+    final String val = base64.encode(utf8.encode(returnValue));
     calloc.free(xPtr);
     calloc.free(yPtr);
     calloc.free(result);
-    return bytes;
+    return val;
   }
 }
